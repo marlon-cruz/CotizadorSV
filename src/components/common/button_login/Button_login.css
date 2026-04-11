@@ -1,0 +1,35 @@
+.buttonLogin {
+  min-width: 120px;
+  height: 50px;
+  border-radius: 12px;
+  background-color: var(--details);
+  color: var(--text);
+  border: none;
+
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgba(245, 158, 11, 0.2),
+    0 2px 4px -1px rgba(245, 158, 11, 0.1);
+}
+
+
+.buttonLogin:hover {
+  background-color: #D97706; 
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(245, 158, 11, 0.4);
+}
+
+.buttonLogin:active {
+  transform: translateY(0);
+  background-color: #B45309; 
+}
+
+.buttonLogin:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(245, 158, 11, 0.4);
+}

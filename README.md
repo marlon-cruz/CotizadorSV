@@ -1,2 +1,49 @@
-# CotizadorSV
-Aplicativo de cotización de inventario potenciado con IA
+Estructura de carpetas:
+
+app/
+├── node_modules/
+├── public/
+│   ├── favicon.ico
+│   └── ...
+├── src/
+│   ├── assets/
+│   │   ├── fonts/
+│   │   ├── images/
+│   │   └── ...
+│   ├── components/
+│   │   ├── common/
+│   │   │   ├── Button/
+│   │   │   └── ...
+│   │   ├── pages/
+│   │   │   ├── HomePage/
+│   │   │   └── ...
+│   │   └── ...
+│   ├── config/
+│   │   ├── env.config.js
+│   │   └── ...
+│   ├── constants/
+│   │   ├── routes.js
+│   │   └── ...
+│   ├── contexts/
+│   │   ├── AuthContext.js
+│   │   └── ...
+│   ├── hooks/
+│   │   ├── useAuth.js
+│   │   └── ...
+│   ├── services/
+│   │   ├── api.js
+│   │   └── ...
+│   ├── styles/
+│   │   ├── global.css
+│   │   └── ...
+│   ├── utils/
+│   │   ├── formatDate.js
+│   │   └── ...
+│   ├── App.js
+│   ├── index.js
+│   └── ...
+├── .gitignore
+├── package.json
+├── package-lock.json
+└── README.md
+
