@@ -1,5 +1,5 @@
 Estructura de carpetas:
-
+```
 app/
 ├── node_modules/
 ├── public/
@@ -46,4 +46,4 @@ app/
 ├── package.json
 ├── package-lock.json
 └── README.md
-
+```
