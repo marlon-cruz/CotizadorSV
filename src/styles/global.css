@@ -1,8 +1,11 @@
 :root{
   --background:#F8FAFC;
-  --background-2:#2563EB;
+  --background-2:#2b45d5;
   --text:#F8FAFC;
   --details:#F59E0B;
+  --details:#688db9;
+  --gradiant:linear-gradient(to right, #2b45d5, #688db9);
+  --shadow:10px 0px 15px -5px rgba(255, 255, 255, 0.3);
 }
 
 *, *::before, *::after {
