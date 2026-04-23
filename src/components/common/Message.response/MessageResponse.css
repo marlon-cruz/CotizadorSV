@@ -1,0 +1,24 @@
+.MessageResponse{
+    background-color: azure;
+    position: relative;
+    text-align: left;
+    max-width: 50vw;
+    min-width: 80px;
+    align-items: end;
+    padding: 10px;
+    align-self: self-start;
+    border-radius: 16px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+     white-space: pre-wrap;
+}
+.MessageResponse::after{
+   content: "";
+  position: absolute;
+  bottom: -10px; 
+  left: 10px;
+  border-width: 10px 10px 0 0px; 
+  border-style: solid;
+  border-color: azure transparent transparent transparent;
+}

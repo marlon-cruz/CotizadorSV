@@ -7,6 +7,14 @@ function Input_login({
   type = "text",
   icon = undefined,
   required = true,
+  event = null,
+  eventKey = null,
+  value = "",
+  onKeyDown = null,
+  status = false,
+  ref = null,
+  focus = false
+ 
 }) {
   return (
     <>
@@ -19,8 +27,14 @@ function Input_login({
           type={type}
           placeholder={placeholder}
           required={required}
+          onChange={eventKey}
+          value={value}
+          onKeyDown = {onKeyDown}
+          disabled = {status}
+   
+        
         />
-        {icon == undefined ? null : <img className="iconInput" src={icon} />}
+        {icon == undefined ? null : <img className="iconInput" src={icon} onClick={event} / >}
       </div>
     </>
   );

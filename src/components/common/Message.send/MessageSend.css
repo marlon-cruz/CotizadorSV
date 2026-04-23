@@ -1,0 +1,25 @@
+.contentMessageSend{
+    background-color: aqua;
+    position: relative;
+    text-align: right;
+    max-width: 50vw;
+    min-width: 10px;
+    align-items: end;
+    padding: 10px;
+    margin: 10px;
+    align-self: self-end;
+    border-radius: 16px;
+    height: auto;
+
+}
+.contentMessageSend::after{
+   content: "";
+  position: absolute;
+  
+  bottom: -10px; 
+  right: 10px;
+
+  border-width: 5px 5px 0 10px; 
+  border-style: solid;
+  border-color: #3498db transparent transparent transparent;
+}

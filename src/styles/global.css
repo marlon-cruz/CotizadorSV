@@ -26,4 +26,7 @@ section{
   right: 10px;
   bottom: 10px;
 }
+h1,h2,h3,h4,h5,div,p,input{
+  font-family: 'Times New Roman', Times, serif;
+}
 
