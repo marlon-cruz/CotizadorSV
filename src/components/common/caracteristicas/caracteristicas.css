@@ -1,0 +1,17 @@
+.productCard{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    background-color: var(--background-2);
+    border: var(--details);
+    color: var(--text);
+    padding: 15px;
+    border-radius: 16px;
+    justify-content: center;
+}
+.productCard>div{
+    border: 2px solid var(--text);
+    padding: 5px;
+    border-radius: 16px;
+    height: auto;
+}

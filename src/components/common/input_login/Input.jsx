@@ -13,7 +13,7 @@ function Input_login({
   onKeyDown = null,
   status = false,
   ref = null,
-  focus = false
+
  
 }) {
   return (
@@ -31,6 +31,7 @@ function Input_login({
           value={value}
           onKeyDown = {onKeyDown}
           disabled = {status}
+          ref={ref}
    
         
         />

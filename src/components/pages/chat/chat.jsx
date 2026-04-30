@@ -19,7 +19,6 @@ function Chat() {
   const [isDisabled, setIsDisabled] = useState(true);
   const inputRef = useRef(null);
 
-
   useEffect(() => {
     if (scrollMessage.current) {
       scrollMessage.current.scrollTo({
@@ -27,11 +26,10 @@ function Chat() {
         behavior: "smooth",
       });
     }
+    if (inputRef.current) {
+      inputRef.current.focus();
+    }
   }, [lista]);
-
-
-
-  
 
   function requestMessage(text = " ") {
     const nuevoContenido = `${text}`;
@@ -56,9 +54,10 @@ function Chat() {
           setEstatus(false);
         } catch (error) {
           requestMessage("Ha ocurrido un error ");
+          setLoading(false);
+          setEstatus(false);
         }
       } catch (error) {
-        console.error(error);
         setLoading(false);
         setEstatus(false);
       }
@@ -96,9 +95,7 @@ function Chat() {
               if (e.key === "Enter") sendMessage();
             }}
             status={estado}
-            
-           
-
+            ref={inputRef}
           />
         </div>
       </div>
